@@ -6,7 +6,7 @@ const authenticateToken = (req, res, next) => {
 
     if (!token) {
       return res.status(401).json({
-        message: "No token provided",
+        message: "Please Login First",
         success: false,
       });
     }
